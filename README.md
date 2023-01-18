@@ -1,4 +1,4 @@
-# ESP 32 UltraWideBand (UWB) Indoor position sensing with 3d web visualization (using three.js)
+# Ollie the Dog's ESP 32 UltraWideBand (UWB) Indoor position sensing with 3d web visualization (using three.js)
 ___
 # What is Ultra-WideBand (UWB)?
 ## It's like GPS positioning that works indoors
@@ -19,9 +19,9 @@ ____
 
 # How does UWB measure distance and positoin?
 ## It measures distance using time of radio wave response
-![uwb distance measurement](documentation\how-uwb-measures-distance.svg)
+![uwb distance measurement](./documentation/how-uwb-measures-distance.svg)
 ## UWB chips use anchors (fixed stations) and tags (moving chips) to measure X, Y, and Z position
-![uwb xyz indoor location using anchors and tags visual](documentation\uwb-location-anchor-tax-xyz-visual.jpg)
+![uwb xyz indoor location using anchors and tags visual](./documentation/uwb-location-anchor-tax-xyz-visual.jpg)
 <br>
 <br>
 <br>
@@ -37,7 +37,7 @@ ____
 <br>
 
 ### A solution trying to find a problem ;)
-![factory geofence visual](documentation\geo-fence-visual-factory.jpg)
+![factory geofence visual](./documentation/geo-fence-visual-factory.jpg)
 - Factory safety - sensing of worker location and machinery (ie auto kill switch)
 - VR/AR video games - multiplayer with location in real-world (think augmented paintball)
 - Pet training - geofences to keep [dogs in the yard](https://www.invisiblefence.com/solutions/outdoor)
@@ -57,7 +57,7 @@ ____
 
 # What companies are using UWB chips/circuits?
 ## Over the past few years tech companies (Apple & Samsumg) [announced products](https://en.wikipedia.org/wiki/Ultra-wideband#Products)
-![uwb chip announcements](documentation\uwb-chip-announcements.jpg)
+![uwb chip announcements](./documentation/uwb-chip-announcements.jpg)
 <br>
 <br>
 <br>
@@ -68,7 +68,7 @@ ____
 # What is the goal of this project?
 ## To build a dog collar that tracks and sets boundries for my dog (Ollie)
 
-![ollie the dog with mike and nour](documentation\ollie-the-dog-with-mike-and-nour.jpg)
+![ollie the dog with mike and nour](./documentation/ollie-the-dog-with-mike-and-nour.jpg)
 1. Record his position/activity every 15 seconds
 2. Set boundries (e.g. kitchen counter, edge of property/sidewalk) that beep when he enters
 3. Display via web (see below)
@@ -77,7 +77,7 @@ I didn't want to use 3d engines like Unity or Unreal that require a complicated 
 <br>
 Here is an early prototype of [visualizing Ollie's position in 3d](https://zobo.dev/uwb-in-3d). The dog is not moving yet so you have to use your imagination to visualize the dog walkign and leaving the yellow dots showing its position
 
-[3d animation](documentation\ollie-animate.gif)
+[3d animation](./documentation/ollie-animate.gif)
 <br>
 <br>
 <br>
@@ -89,14 +89,14 @@ ____
 
 # Technically, What does this project do? #Overview
 This project uses Makerfabs [ESP32 UWB (Ultra Wideband) Microcontroller](https://www.makerfabs.com/esp32-uwb-ultra-wideband.html) to perform indoor position sensing.  We calculate the X, Y, and Z for a 3d position sense.
-![uwb chip in hand](documentation\makerfab-esp32-uwb-chip-in-hand.jpg)
-![uwb chip bottom](documentation\makerfab-esp32-uwb-chip-bottom.jpg)
+![uwb chip in hand](./documentation/makerfab-esp32-uwb-chip-in-hand.jpg)
+![uwb chip bottom](./documentation/makerfab-esp32-uwb-chip-bottom.jpg)
 ____________________
 ### I have 4 microcontrollers all plugged into a USB hub for R&D
-![uwb chip x 4 & usb hub](documentation\makerfab-esp32-uwb-chip-x-4-usb-hub.jpg)
+![uwb chip x 4 & usb hub](./documentation/makerfab-esp32-uwb-chip-x-4-usb-hub.jpg)
 ____________________
 ### This magic of the makerfabs esp32 uwb dev board is the [decawave (now acquired by Qorvo) DW1000](https://www.qorvo.com/products/p/DW1000) ultra wide band chip. 
-![uwb chip dw1000 arrow](documentation\makerfab-esp32-uwb-chip-close-up-arrow.jpg)
+![uwb chip dw1000 arrow](./documentation/makerfab-esp32-uwb-chip-close-up-arrow.jpg)
 
 <br>
 <br>
@@ -120,4 +120,4 @@ ____
     -  **Still 80% overestimating/ false advertising? = 40 meters (120 feet)**  If the new chip is about the same 80% hopium advertisement as their original UWB chip... it will achive 40 meters (120 feet) of the 200 meters they advertise.   
         -  The regular ESP32 UWB I tested is advertised at 45 meters but my testing indicates 8 meters maximum distance. Approximatly 20%
      -  **Is it worth $300 to test the new chip's distance?** (5 chips needed @ $55 each for X*2,Y,Z, Tag anchors for 3d position)
-     -  ![chip compare](documentation\makerfab-chip-compare.jpg)
+     -  ![chip compare](./documentation/makerfab-chip-compare.jpg)
