@@ -1,5 +1,74 @@
-# Ollie the Dog's ESP 32 UltraWideBand (UWB) Indoor position sensing with 3d web visualization (using three.js)
+# Ollie the Dog's UWB
+## ESP 32 UltraWideBand (UWB) Indoor position sensing with 3d web visualization (using three.js)
+### Table of Content
+ 
+- [What is the goal of this project?](#what-is-the-goal-of-this-project) 
+- [Who is Ollie the Dog?](#who-is-ollie-the-dog) 
+- [What do we mean by display/visualize Ollie's position in 3d on the web?](#what-do-we-mean-by-displayvisualize-ollies-position-in-3d-on-the-web)
+- [What is Ultra-WideBand (UWB)?](#what-is-ultra-wideband-uwb) 
+- [How does UWB measure distance and positoin?](#how-does-uwb-measure-distance-and-positoin) 
+- [Why does UWB matter? Who cares?](#why-does-uwb-matter-who-cares) 
+- [What companies are using UWB chips/circuits?](#what-companies-are-using-uwb-chipscircuits) 
+- [How will this work Technically?  #Overview](#how-will-this-work-technically--overview) 
+
+
+
+
 ___
+<br>
+<br>
+<br>
+<br>
+
+# What is the goal of this project?
+## To build a UWB dog collar for Ollie the Dog
+
+![dog collar](./documentation/dog-collar-pic.jpg)
+## Goals
+1. Record his position/activity every 15 seconds (indoors or outdoors)
+2. Set boundries (e.g. kitchen counter, edge of property/sidewalk) that beep when he enters
+3. Display position in 3d via web [details below](#what-do-we-mean-by-displayvisualize-ollies-position-in-3d-on-the-web)
+
+<br>
+<br>
+<br>
+<br>
+
+____
+
+
+# Who is Ollie the Dog?
+## Mike & Nour Baird's "good boy" in Lakewood, Ohio
+![ollie the dog with mike and nour](./documentation/ollie-the-dog-with-mike-and-nour.jpg)
+![ollie the dog relaxing](./documentation/ollie-relaxing.jpg)
+<br>
+<br>
+<br>
+<br>
+
+____
+
+
+
+
+# What do we mean by display/visualize Ollie's position in 3d on the web?
+I didn't want to use 3d engines like Unity or Unreal that require a complicated install.  Web technology has advanced with cool libraries like [three.js](https://threejs.org/manual/#en/fundamentals) simplifying WebGL to make  [examples like this possible](https://threejs.org/examples/#webgl_animation_keyframes)
+<br>
+Here is an early prototype of [visualizing Ollie's position in 3d](https://zobo.dev/uwb-in-3d). The dog is not moving yet so you have to use your imagination to visualize the dog walkign and leaving the yellow dots showing its position
+
+![3d animation](./documentation/ollie-animate.gif)
+source: [zobo.dev](https://zobo.dev/uwb-in-3d)
+<br>
+<br>
+<br>
+<br>
+
+____
+
+
+
+
+
 # What is Ultra-WideBand (UWB)?
 ## It's like GPS positioning that works indoors
 A radio frequency that is [high frequency (often 6GHz to 9GHz)](https://en.wikipedia.org/wiki/Radio_spectrum) and low energy.  Other radio frequencies like FM Radio operate at ~100 MHz so it's infrequent and has a large radio wavelength measured in meters.  [Ultra Wideband](https://en.wikipedia.org/wiki/Ultra-wideband) is fast often operating at 6GHz with a wider band and small wavelenght measured in centemeters.  
@@ -31,7 +100,7 @@ ____
 
 
 
-# Why does UWB matter? 
+# Why does UWB matter? Who cares?
 ## For the first time in history, we can measure indoor postion
 ### 5 years ago this wasn't possible
 <br>
@@ -65,29 +134,13 @@ ____
 
 ____
 
-# What is the goal of this project?
-## To build a dog collar that tracks and sets boundries for my dog (Ollie)
-
-![ollie the dog with mike and nour](./documentation/ollie-the-dog-with-mike-and-nour.jpg)
-1. Record his position/activity every 15 seconds
-2. Set boundries (e.g. kitchen counter, edge of property/sidewalk) that beep when he enters
-3. Display via web (see below)
-## To display/visualize Ollie's behaviour on the web
-I didn't want to use 3d engines like Unity or Unreal that require a complicated install.  Web technology has advanced with cool libraries like [three.js](https://threejs.org/manual/#en/fundamentals) simplifying WebGL to make  [examples like this possible](https://threejs.org/examples/#webgl_animation_keyframes)
-<br>
-Here is an early prototype of [visualizing Ollie's position in 3d](https://zobo.dev/uwb-in-3d). The dog is not moving yet so you have to use your imagination to visualize the dog walkign and leaving the yellow dots showing its position
-
-[3d animation](./documentation/ollie-animate.gif)
-<br>
-<br>
-<br>
-<br>
-
-____
 
 
 
-# Technically, What does this project do? #Overview
+
+
+
+# How will this work Technically?  #Overview
 This project uses Makerfabs [ESP32 UWB (Ultra Wideband) Microcontroller](https://www.makerfabs.com/esp32-uwb-ultra-wideband.html) to perform indoor position sensing.  We calculate the X, Y, and Z for a 3d position sense.
 ![uwb chip in hand](./documentation/makerfab-esp32-uwb-chip-in-hand.jpg)
 ![uwb chip bottom](./documentation/makerfab-esp32-uwb-chip-bottom.jpg)
