@@ -4,7 +4,7 @@ ___
 ## It's like GPS positioning that works indoors
 A radio frequency that is [high frequency (often 6GHz to 9GHz)](https://en.wikipedia.org/wiki/Radio_spectrum) and low energy.  Other radio frequencies like FM Radio operate at ~100 MHz so it's infrequent and has a large radio wavelength measured in meters.  [Ultra Wideband](https://en.wikipedia.org/wiki/Ultra-wideband) is fast often operating at 6GHz with a wider band and small wavelenght measured in centemeters.  
 
-![uwb radio frequency](documentation\UWB_frequency.png)
+![uwb radio frequency](./documentation/UWB_frequency.png)
 This allows locating through geometery/triangulation (similar to GPS) using anchors and tags
 <br>
 <br>
