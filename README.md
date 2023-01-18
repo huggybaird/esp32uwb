@@ -102,15 +102,16 @@ ____
 
 
 # Why does UWB matter? Who cares?
-## For the first time in history, we can measure indoor postion
+## For the first time in history, we can ***accuratly*** measure indoor postion
 ### 5 years ago this wasn't possible
 <br>
 
 ### A solution trying to find a problem ;)
 ![factory geofence visual](./documentation/geo-fence-visual-factory.jpg)
-- Factory safety - sensing of worker location and machinery (ie auto kill switch)
-- VR/AR video games - multiplayer with location in real-world (think augmented paintball)
-- Pet training - geofences to keep [dogs in the yard](https://www.invisiblefence.com/solutions/outdoor)
+- ***Warehouse/Factory safety*** - sensing of worker location and machinery (ie auto kill switch)
+- ***Interior Design/Construction*** - walk around house and measure/model the floorplan in 3d
+- ***VR/AR video games*** - multiplayer with location in real-world (think augmented paintball)
+- ***Pet training*** - geofences to keep [dogs in the yard](https://www.invisiblefence.com/solutions/outdoor)
     - Current tech is either wired (buried under grass) or GPS for 6+ acre properties. current tech doesn't work indoors.  Imagine putting geofences on your kitchen counter and couch. 
   
 ## What are some real world uses YOU can think of?
