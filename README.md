@@ -1,17 +1,18 @@
-# Ollie the Dog's UWB
+# Ollie the Dog's UWB Collar
 ## ESP 32 UltraWideBand (UWB) Indoor position sensing with 3d web visualization (using three.js)
 ### Table of Content
  
+
+- [Ollie the Dog's UWB Collar](#ollie-the-dogs-uwb-collar) 
 - [What is the goal of this project?](#what-is-the-goal-of-this-project) 
 - [Who is Ollie the Dog?](#who-is-ollie-the-dog) 
 - [What do we mean by display/visualize Ollie's position in 3d on the web?](#what-do-we-mean-by-displayvisualize-ollies-position-in-3d-on-the-web)
 - [What is Ultra-WideBand (UWB)?](#what-is-ultra-wideband-uwb) 
 - [How does UWB measure distance and positoin?](#how-does-uwb-measure-distance-and-positoin) 
 - [Why does UWB matter? Who cares?](#why-does-uwb-matter-who-cares) 
+- [Is Ollie's dog collar a realistic business/startup idea?](#is-ollies-dog-collar-a-realistic-businessstartup-idea) 
 - [What companies are using UWB chips/circuits?](#what-companies-are-using-uwb-chipscircuits) 
 - [How will this work Technically?  #Overview](#how-will-this-work-technically--overview) 
-
-
 
 
 ___
@@ -25,9 +26,9 @@ ___
 
 ![dog collar](./documentation/dog-collar-pic.jpg)
 ## Goals
-1. Record his position/activity every 15 seconds (indoors or outdoors)
-2. Set boundries (e.g. kitchen counter, edge of property/sidewalk) that beep when he enters
-3. Display position in 3d via web [details below](#what-do-we-mean-by-displayvisualize-ollies-position-in-3d-on-the-web)
+1. Record his 3d position every 15 seconds (indoors or outdoors)
+2. Set geo-boundries (e.g. kitchen counter) that beep when he enters
+3. Display Ollie's activity/position in 3d via web [details below](#what-do-we-mean-by-displayvisualize-ollies-position-in-3d-on-the-web)
 
 <br>
 <br>
@@ -120,6 +121,35 @@ ____
 
 ____
 
+
+
+
+
+
+
+
+# Is Ollie's dog collar a realistic business/startup idea?
+## No... at least not for Mike Baird (Ollie's best friend and the creater of this project)
+## Huge Industry
+The pet industry does about $110 billion in revenue. Its too big for a small individual/starup to compete in without existing connections, capital, or a larger team.
+## Lots of competitors (and sophisticated ones) 
+![dog collar competitors](./documentation/amazon-pet-collar-competitors.jpg)
+and the existing players in the space (e.g. [Invisible Fence](https://www.invisiblefence.com/our-company)) that have over 10,000 employees and 3+ million customers. 
+Still, these competitors do have limitaitons (as of 1/18/2022):
+1. ***GPS is not accurate*** - per their own insturctions its not recommended for homes with less than 6 acres. for < 6 acres you need to do an expensive install burying wires
+2. ***RFID chips dont track position*** there are some solutions to put RFID pods on your kitchen counter that been when the dog approaches, but this technology doesn't allow for activity tracking.  plus you need a different/seperate solution to put up the fence around the peremiter of your home. UWB is a all-in-one solution
+
+In 10 years from now, these existing competitors will have UWB products on the market
+
+## Ping me if you have a niche UWB use case
+I'm doing this project for learning and fun.  Ollie don't care, but his bestie does.  If you brainstorm a good/niche use case that is less "big", ping me and we can partner.  Loves me some cool tech & startups
+
+<br>
+<br>
+<br>
+<br>
+
+____
 
 
 
