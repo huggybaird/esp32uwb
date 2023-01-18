@@ -40,7 +40,9 @@ ____
 
 # Who is Ollie the Dog?
 ## Mike & Nour Baird's "good boy" in Lakewood, Ohio
+### Ollie, Mike, Nour at the Bar (Lakewood Truck Park - Dec 2021)
 ![ollie the dog with mike and nour](./documentation/ollie-the-dog-with-mike-and-nour.jpg)
+### Ollie Relaxing with no worries.  Ollie Don't Care!!!
 ![ollie the dog relaxing](./documentation/ollie-relaxing.jpg)
 <br>
 <br>
@@ -53,7 +55,7 @@ ____
 
 
 # What do we mean by display/visualize Ollie's position in 3d on the web?
-I didn't want to use 3d engines like Unity or Unreal that require a complicated install.  Web technology has advanced with cool libraries like [three.js](https://threejs.org/manual/#en/fundamentals) simplifying WebGL to make  [examples like this possible](https://threejs.org/examples/#webgl_animation_keyframes)
+I didn't want to use 3d engines like Unity or Unreal that require installing software (setup.ext, msi, etc.) for maintenance and simplificaiton reasons.  Web technology has advanced with cool libraries like [three.js](https://threejs.org/manual/#en/fundamentals) simplifying WebGL to make  [examples like this possible](https://threejs.org/examples/#webgl_animation_keyframes)
 <br>
 Here is an early prototype of [visualizing Ollie's position in 3d](https://zobo.dev/uwb-in-3d). The dog is not moving yet so you have to use your imagination to visualize the dog walkign and leaving the yellow dots showing its position
 
